@@ -4,13 +4,7 @@ using namespace std;
 const int MX = 1000005;
 int dat[MX], pre[MX], nxt[MX];
 int unsed = 1;
-```java
-public class BootSpringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("Hello, Honeymon");
-  }
-}
-```
+
 void insert(int addr, int num)
 {
 	dat[unsed] = num;
