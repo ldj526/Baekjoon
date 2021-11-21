@@ -1,3 +1,4 @@
+```C++
 #include <iostream>
 using namespace std;
 
@@ -68,3 +69,4 @@ int main(void)
 	insert_test();
 	erase_test();
 }
+```
