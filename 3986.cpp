@@ -20,7 +20,7 @@ int main(void)
 				st.push(s[j]);
 			}
 			else if (s[j] == 'A') {
-				if (st.empty()||st.top() != 'A') {
+				if (st.empty() || st.top() != 'A') {
 					st.push(s[j]); 
 				}
 				else 
