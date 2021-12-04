@@ -1,3 +1,4 @@
+// 시작점이 두 종류일 때
 #include <iostream>
 #include <queue>
 #include <algorithm>
