@@ -35,8 +35,8 @@ int main(void) {
 				{
 					int nx = cur.X + dx[dir];
 					int ny = cur.Y + dy[dir];
-					if (nx < 0 || nx >= N || ny < 0 || ny >= N) continue;
-					if (board[nx][ny] == '0' || vis[nx][ny] == 1) continue;
+					if (nx < 0 || nx >= N || ny < 0 || ny >= N) continue;		// 범위를 벗어나면 pass
+					if (board[nx][ny] == '0' || vis[nx][ny] == 1) continue;		// 집이 아니거나 방문했던 곳이면 pass
 					vis[nx][ny] = 1;
 					Q.push({ nx,ny });
 					area++;
