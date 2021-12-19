@@ -40,8 +40,8 @@ int main(void) {
 				{
 					int nx = cur.X + dx[dir];
 					int ny = cur.Y + dy[dir];
-					if (nx < 0 || nx >= M || ny < 0 || ny >= N) continue;
-					if (board[nx][ny] == 1 || vis[nx][ny] == 1) continue;
+					if (nx < 0 || nx >= M || ny < 0 || ny >= N) continue;		// 범위를 벗어나면 pass
+					if (board[nx][ny] == 1 || vis[nx][ny] == 1) continue;		// 아닌곳을 세야 하므로 영역이거나 방문한 곳이면 pass
 					Q.push({ nx, ny });
 					vis[nx][ny] = 1;
 					area++;
