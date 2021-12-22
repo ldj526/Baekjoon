@@ -16,7 +16,6 @@ int main(void)
 {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int cnt = 0;
 	cin >> r >> c;
 	queue<pair<int, int>> Q1;
 	queue<pair<int, int>> Q2;
