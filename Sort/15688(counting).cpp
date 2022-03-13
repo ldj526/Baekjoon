@@ -1,3 +1,5 @@
+// Counting Sort
+
 #include <iostream>
 using namespace std;
 int n, a;
