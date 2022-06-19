@@ -15,15 +15,9 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     var cnt = 0
     for (i in 0 until 26) {
         if (arr1[i] < arr2[i]) {
-            while (arr1[i] < arr2[i]) {
-                arr2[i]--
-                cnt++
-            }
+            cnt += arr2[i] - arr1[i]
         } else if (arr1[i] > arr2[i]) {
-            while (arr1[i] > arr2[i]) {
-                arr1[i]--
-                cnt++
-            }
+            cnt += arr1[i] - arr2[i]
         }
     }
     println(cnt)
